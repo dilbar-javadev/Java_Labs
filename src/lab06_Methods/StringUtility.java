@@ -2,6 +2,8 @@ package lab06_Methods;
 
 public class StringUtility {
 
+
+    // return the frequency of the given word from the given sentence
     public static int frequency(String sentence, String word){
 
         int count = 0;

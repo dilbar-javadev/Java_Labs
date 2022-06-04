@@ -4,6 +4,13 @@ public class StringMethodsPractice {
 
     public static void main(String[] args) {
 
+        String name = "John Daniel Aaron";
+        char ch = name.charAt(3);
+        System.out.println(ch);
+
+        char lastChar = name.charAt(name.length()-1);
+        System.out.println(lastChar);
+
         System.out.println("------------------------------------");
 
         String school = "Cydeo School";

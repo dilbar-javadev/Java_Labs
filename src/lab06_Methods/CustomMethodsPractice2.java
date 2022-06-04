@@ -46,8 +46,15 @@ public class CustomMethodsPractice2 {
         return str.substring(str.length()-2) + str.substring(0,str.length()-2);
     }
 
-    public static String frontAgain(String str){
-         return str.substring(0,2) + str.substring(str.length()-2);
+    public static boolean frontAgain(String str){
+
+        if(str.length() < 2){
+            return false;
+        }
+
+        return str.substring(0,2).equals(str.substring(str.length()-2));
+
+        //  return firstTwoCharacters.endsWith(lastTwoCharacters);
     }
 
     public static int countHi(String str){
