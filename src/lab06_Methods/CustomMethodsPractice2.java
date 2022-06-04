@@ -1,5 +1,7 @@
 package lab06_Methods;
 
+import java.sql.SQLOutput;
+
 public class CustomMethodsPractice2 {
 
     public static void main(String[] args) {
@@ -9,6 +11,12 @@ public class CustomMethodsPractice2 {
         System.out.println(left2("Java"));
 
         System.out.println(right2("Hello"));
+
+        System.out.println(frontAgain("edited"));
+
+        System.out.println(countHi("Hi Hi Hi Hi"));
+
+        System.out.println(catDog("Cat Cat Dog Dog Dog"));
     }
 
     public static String comboString(String a, String b){
@@ -36,5 +44,20 @@ public class CustomMethodsPractice2 {
         }
 
         return str.substring(str.length()-2) + str.substring(0,str.length()-2);
+    }
+
+    public static String frontAgain(String str){
+         return str.substring(0,2) + str.substring(str.length()-2);
+    }
+
+    public static int countHi(String str){
+        return StringUtility.frequency(str,"Hi");
+    }
+
+    public static boolean catDog(String str){
+        str = str.toLowerCase();
+        int countCat = StringUtility.frequency(str,"cat");
+        int countDog = StringUtility.frequency(str,"dog");
+        return countCat == countDog;
     }
 }
