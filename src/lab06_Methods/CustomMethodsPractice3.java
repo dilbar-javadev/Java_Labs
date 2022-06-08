@@ -1,5 +1,7 @@
 package lab06_Methods;
 
+import utilities.StringUtility;
+
 public class CustomMethodsPractice3 {
 
     public static void main(String[] args) {
