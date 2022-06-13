@@ -36,6 +36,26 @@ public class Main {
 
             switch(request-1){
                 case 0:
+
+                    //ask expense name, amount, user
+
+                    Expense expense = new Expense();
+
+                    System.out.println("Expense name: ");
+                    expense.expenseName = scanner.next();
+
+                    System.out.println("Expense amount: ");
+                    expense.amount = scanner.nextInt();
+
+                    System.out.println("Which user made this expense? Type user ID: ");
+                    for (User user : userList) {
+                        System.out.println("ID: " + userList.indexOf(user) + " Name: " + user.name);
+                    }
+
+                    int userId = scanner.nextInt();
+
+
+
                     break;
                 case 1:
                     break;
