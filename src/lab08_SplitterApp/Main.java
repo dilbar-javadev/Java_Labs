@@ -15,11 +15,41 @@ public class Main {
         //Ask how many people in the budget planner?
         System.out.println("How many people will split the budget?");
 
-
         // Creat user
-
         ArrayList<User> userList = prepareUserLists(scanner);
 
+        System.out.println("Added user count: " + userList.size());
+
+        String[] optionList = prepareOptionList();
+
+        while(true){
+
+            System.out.println("What would you like to do?");
+
+            for (int i = 0; i < optionList.length; i++) {
+
+                System.out.println((i+1) + " : " + optionList[i]);
+
+            }
+
+            int request = scanner.nextInt();
+
+            switch(request-1){
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    System.exit(0);
+            }
+
+        }
 
     }
 
@@ -45,6 +75,22 @@ public class Main {
         return userList;
     }
 
+    public static String[] prepareOptionList(){
+
+         /*
+        Creating options
+        0 : Make Expense
+        1 : List Specific person Expense
+        2 : List All Expenses
+        3 : Make Split
+        4 : List All Users
+        5 : Close the Budget
+         */
+
+        String[] optionList = {"Make Expense", "List Specific person Expense", "List All Expenses", "Make Split", "List All Users", "Close the Budget"};
+
+        return optionList;
+    }
 }
 
 
