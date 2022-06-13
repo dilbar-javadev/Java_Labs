@@ -1,5 +1,6 @@
 package lab08_SplitterApp;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -13,11 +14,22 @@ public class Main {
 
         //Ask how many people in the budget planner?
         System.out.println("How many people will split the budget?");
-        int userCount = scanner.nextInt();
+
 
         // Creat user
 
-        for(int i = 0; i < userCount; i++){
+        ArrayList<User> userList = prepareUserLists(scanner);
+
+
+    }
+
+    public static ArrayList<User> prepareUserLists(Scanner scanner) {
+
+        ArrayList<User> userList = new ArrayList<>();
+
+        int userCount = scanner.nextInt();
+
+        for (int i = 0; i < userCount; i++) {
 
             User user = new User();
 
@@ -27,7 +39,12 @@ public class Main {
             System.out.println("Email: ");
             user.email = scanner.next();
 
-
+            userList.add(user);   //object
         }
+
+        return userList;
     }
+
 }
+
+
