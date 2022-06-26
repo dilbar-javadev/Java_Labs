@@ -55,7 +55,7 @@ public class ScrumTeam {  //ScrumTeam HAS a Tester
         return testers;
     }
 
-    public ArrayList<Developer> getDeveloper() {
+    public ArrayList<Developer> getDevelopers() {
         return developers;
     }
 
