@@ -1,3 +1,5 @@
+package ScrumMaster;
+
 public class Person {
 
     private String name;
