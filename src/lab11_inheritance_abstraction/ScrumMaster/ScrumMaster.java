@@ -1,6 +1,6 @@
-package ScrumMaster;
+package lab11_inheritance_abstraction.ScrumMaster;
 
-public final class ScrumMaster extends Employee{
+public final class ScrumMaster extends Employee implements ScrumMember, WFH{
 
 
     public ScrumMaster(String name, int age, char gender, String id, double salary) {
@@ -14,5 +14,20 @@ public final class ScrumMaster extends Employee{
 
     public void coaching(){
         System.out.println(getName() + " is coaching");
+    }
+
+    @Override
+    public void dailyStandUp() {
+
+    }
+
+    @Override
+    public void sprintPlanning() {
+
+    }
+
+    @Override
+    public void WorkFromHome() {
+
     }
 }

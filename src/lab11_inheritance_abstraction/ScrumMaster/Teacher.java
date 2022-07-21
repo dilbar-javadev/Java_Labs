@@ -1,6 +1,6 @@
-package ScrumMaster;
+package lab11_inheritance_abstraction.ScrumMaster;
 
-public class Teacher extends Employee{
+public class Teacher extends Employee implements WFH{
 
     public Teacher(String name, int age, char gender, String id, String jobTitle, double salary) {
         super(name, age, gender, id, jobTitle, salary);
@@ -16,4 +16,8 @@ public class Teacher extends Employee{
     }
 
 
+    @Override
+    public void WorkFromHome() {
+
+    }
 }

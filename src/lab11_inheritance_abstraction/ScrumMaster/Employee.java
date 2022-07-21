@@ -1,4 +1,4 @@
-package ScrumMaster;
+package lab11_inheritance_abstraction.ScrumMaster;
 
 public abstract class Employee extends Person{
 

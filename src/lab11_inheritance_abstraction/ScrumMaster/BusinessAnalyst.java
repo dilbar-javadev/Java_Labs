@@ -1,6 +1,6 @@
-package ScrumMaster;
+package lab11_inheritance_abstraction.ScrumMaster;
 
-public final class BusinessAnalyst extends Employee{
+public final class BusinessAnalyst extends Employee implements ScrumMember, WFH{
 
 
     public BusinessAnalyst(String name, int age, char gender, String id, double salary) {
@@ -14,5 +14,20 @@ public final class BusinessAnalyst extends Employee{
 
     public void analyze(){
         System.out.println(getName() + " is analyzing the requirements");
+    }
+
+    @Override
+    public void dailyStandUp() {
+
+    }
+
+    @Override
+    public void sprintPlanning() {
+
+    }
+
+    @Override
+    public void WorkFromHome() {
+
     }
 }
